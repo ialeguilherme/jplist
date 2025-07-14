@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const resetButton = document.getElementById('reset-button');
 
     // ** 1. Inicialização do Supabase **
-    const SUPABASE_URL = 'SUA_URL_DO_PROJETO'; // Substitua pela sua URL do Supabase
-    const SUPABASE_ANON_KEY = 'SUA_CHAVE_ANON_PUBLIC'; // Substitua pela sua chave anon public
+    const SUPABASE_URL = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmaG5naHlxbWR1aXlpY2ZxZHRpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI0NTA4NjUsImV4cCI6MjA2ODAyNjg2NX0._UKv8z0MIC96q4oMFU6vZkMCUUjolxf86LizMCaDtxo'; // Substitua pela sua URL do Supabase
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmaG5naHlxbWR1aXlpY2ZxZHRpIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MjQ1MDg2NSwiZXhwIjoyMDY4MDI2ODY1fQ.ABIfz3Gf29cUP_6Mq4_1VE5zndw5lYwXL6Eial-Q19E'; // Substitua pela sua chave anon public
 
     const supabase = supabase_js.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
