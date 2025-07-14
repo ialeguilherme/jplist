@@ -22,13 +22,14 @@
             <section class="add-person">
                 <h2>Adicionar Pessoa à Fila</h2>
                 <div class="input-group">
-                    <input type="text" id="person-name" placeholder="Nome da Pessoa" aria-label="Nome da Pessoa">
-                    <select id="priority-type" aria-label="Tipo de Atendimento">
-                        <option value="normal">Normal</option>
-                        <option value="preferencial">Preferencial</option>
-                        <option value="urgencia">Urgência</option>
-                        <option value="encaixe">Encaixe</option>
-                    </select>
+                    <div class="input-top-row"> <input type="text" id="person-name" placeholder="Nome da Pessoa" aria-label="Nome da Pessoa">
+                        <select id="priority-type" aria-label="Tipo de Atendimento">
+                            <option value="normal">Normal</option>
+                            <option value="preferencial">Preferencial</option>
+                            <option value="urgencia">Urgência</option>
+                            <option value="encaixe">Encaixe</option>
+                        </select>
+                    </div>
                     <textarea id="observation" placeholder="Observações (opcional)" rows="3"></textarea>
                     <button id="add-button">Adicionar</button>
                 </div>
@@ -51,6 +52,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="script.js"></script>
 </body>
 </html>
